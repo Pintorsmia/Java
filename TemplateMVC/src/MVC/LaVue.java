@@ -37,6 +37,7 @@ public class LaVue extends JFrame implements Observer {
         contenu.add(this.bouton1);
         contenu.add(this.label1);
         ajouterEvent(); //methode cree dans la classe regroupe tous les events (c'est juste pour simplifier la lecture)
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Affiche la fenetre
         setVisible(true);
         //Met à jour des information (pas très utile dans notre cas, mais on sait jamais)
