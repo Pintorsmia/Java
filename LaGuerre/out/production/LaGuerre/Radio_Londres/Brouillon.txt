@@ -1,0 +1,28 @@
+public Interface_RadioLondres(Controler_RadioLondres controllerRadio) {
+        super();
+        this.controler_radioLondres = controllerRadio;
+        this.controler_radioLondres.getRadioLondres().addObserver(this);
+
+        //Creation de l'interface
+        setTitle("Ma fenetre");
+        setBounds(10, 40, 300, 200);
+        //Creation des objet dans notre fenetre
+        this.nextMessageButton = new JButton("Message Suivant");
+        //Pour afficher du texte
+        this.diffuseMessageLabel = new JLabel();
+        //False car pour le moment il n'y a pas de texte a afficher
+        this.diffuseMessageLabel.setVisible(false);
+        this.diffuseMessageLabel.setLocation(30,20);
+        //Creation de notre container
+        Container contenu = getContentPane();
+        contenu.setLayout(new FlowLayout());
+        //ajoute nos element dans le container
+        contenu.add(this.nextMessageButton);
+        contenu.add(this.diffuseMessageLabel);
+
+        ajouterEvent(); //methode cree dans la classe regroupe tous les events (c'est juste pour simplifier la lecture)
+        //Affiche la fenetre
+        setVisible(true);
+        //Met à jour des information (pas très utile dans notre cas, mais on sait jamais)
+        repaint();
+    }
