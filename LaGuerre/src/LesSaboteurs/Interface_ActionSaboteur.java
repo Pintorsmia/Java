@@ -28,7 +28,7 @@ public class Interface_ActionSaboteur extends JFrame implements Observer {
 
     @Override
     public void update(Observable observable, Object o) {
-        message = controller.getMessageDiffuse();
+
         repaint();
     }
 
