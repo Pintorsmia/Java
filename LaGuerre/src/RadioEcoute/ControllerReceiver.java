@@ -3,7 +3,12 @@ package RadioEcoute;
 public class ControllerReceiver {
     private Auditeur auditeur;
 
+
     public ControllerReceiver(Auditeur auditeur) {
+        this.auditeur = auditeur;
+    }
+
+    public ControllerReceiver(GroupeClandestin auditeur) {
         this.auditeur = auditeur;
     }
 
@@ -17,4 +22,5 @@ public class ControllerReceiver {
     public Auditeur getAuditeur() {
         return auditeur;
     }
+    public Boolean getAction(){return this.auditeur.getAction();}
 }

@@ -32,4 +32,8 @@ public abstract class Auditeur extends Observable implements Observer {
     public String getMessageRecu() {
         return messageRecu;
     }
+
+    public Boolean getAction(){
+        return false;
+    }
 }

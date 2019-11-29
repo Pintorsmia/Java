@@ -16,11 +16,10 @@ import java.util.Observer;
 public class Interface_Receiver extends JFrame implements Observer {
     private ControllerReceiver controller;
     private Container contenu;
-    private ArrayList<String> resistant;
-    private JButton nextMessage;
+    private JButton diffuseAction;
     private JLabel label;
     private String message;
-    private JComboBox listeResistants;
+
 
     public Interface_Receiver(ControllerReceiver controller) {
         this.controller = controller;
@@ -37,6 +36,9 @@ public class Interface_Receiver extends JFrame implements Observer {
     @Override
     public void update(Observable observable, Object o) {
         message = controller.getMessageDiffuse();
+        if (controller.getAction()){
+            this.diffuseAction.setEnabled(true);
+        }
         repaint();
     }
 
@@ -47,14 +49,20 @@ public class Interface_Receiver extends JFrame implements Observer {
         setLocation(300,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Creation des objet dans notre fenetre
-
         this.label = new JLabel();
         this.label.setVisible(true);
+
 
         this.contenu = getContentPane();
         this.contenu.setLayout(new FlowLayout());
         //ajouts des elements
         this.contenu.add(this.label);
+        //Pour le bouton on vérifie juste que ce soit un Groupe clandestin et pas une personne "lambda"
+        if(this.controller.getAuditeur() instanceof GroupeClandestin){
+            this.diffuseAction = new JButton("Transmettre ordre");
+            this.diffuseAction.setEnabled(false);
+            this.contenu.add(this.diffuseAction);
+        }
 
         //Affiche la fenetre
         setVisible(true);

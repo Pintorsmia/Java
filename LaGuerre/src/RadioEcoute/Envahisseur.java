@@ -9,4 +9,5 @@ public class Envahisseur extends Auditeur {
         this.pseudo = pseudo;
 
     }
+
 }
