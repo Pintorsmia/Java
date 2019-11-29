@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RadioEcoute/GroupeClandestin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/GroupeClandestin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Radio_Londres/Lanceur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Radio_Londres/Lanceur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Radio_Londres/Saboteurs.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -125,7 +124,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575032881672</updated>
     </task>
-    <option name="localTasksCounter" value="7" />
+    <task id="LOCAL-00007" summary="Interface saboteur créer et fonctionnel">
+      <created>1575038062990</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1575038062990</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -146,7 +152,8 @@
     <MESSAGE value="Modification pour que l'interface auditeur détecte lorsqu'un message est envoyé" />
     <MESSAGE value="Interface pour l'envahisseur fonctionnel" />
     <MESSAGE value="Interface saboteur créer, il faut la modifier" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interface saboteur créer, il faut la modifier" />
+    <MESSAGE value="Interface saboteur créer et fonctionnel" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface saboteur créer et fonctionnel" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LaGuerre$Lanceur.ic" NAME="Lanceur Coverage Results" MODIFIED="1575028782003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

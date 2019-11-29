@@ -60,7 +60,7 @@ public class Lanceur {
         // modele
         Envahisseur envahisseur1 = new Envahisseur("Envahisseur1", controler_radioLondres);
 
-        GroupeClandestin groupe1 = new GroupeClandestin("GroupeClandestin1", controler_radioLondres);
+        GroupeClandestin groupe1 = new GroupeClandestin("GroupeClandestin1","2121", saboteur1, controler_radioLondres);
 
         //Controller des auditeurs
         ControllerReceiver controllerReceiver1 = new ControllerReceiver(envahisseur1);
