@@ -36,4 +36,7 @@ public abstract class Auditeur extends Observable implements Observer {
     public Boolean getAction(){
         return false;
     }
+    public void diffuseOrdre(){
+
+    }
 }

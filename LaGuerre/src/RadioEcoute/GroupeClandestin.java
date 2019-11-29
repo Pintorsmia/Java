@@ -23,12 +23,17 @@ public class GroupeClandestin extends Auditeur {
         super.update(observable, o);
         if (this.messageRecu == this.msgAttendu){
             this.action = true;
-            saboteur.diffuseAction();
+
             setChanged();
             notifyObservers();
         }
     }
 
+    public void diffuseOrdre(){
+        saboteur.diffuseAction();
+        setChanged();
+        notifyObservers();
+    }
     @Override
     public Boolean getAction() {
         super.getAction();

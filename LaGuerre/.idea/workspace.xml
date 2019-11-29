@@ -3,10 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/RadioEcoute/Auditeur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/RadioEcoute/Auditeur.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RadioEcoute/Auditeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/Auditeur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RadioEcoute/ControllerReceiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/ControllerReceiver.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RadioEcoute/Envahisseur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/Envahisseur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RadioEcoute/GroupeClandestin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/GroupeClandestin.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RadioEcoute/Interface_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/Interface_Receiver.java" afterDir="false" />
     </list>
@@ -143,7 +141,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575038524691</updated>
     </task>
-    <option name="localTasksCounter" value="9" />
+    <task id="LOCAL-00009" summary="bouton lorsque l'on recoit le message à envoyer avec le groupe clandestins, il faut mettre les actions dessus">
+      <created>1575041988444</created>
+      <option name="number" value="00009" />
+      <option name="presentableId" value="LOCAL-00009" />
+      <option name="project" value="LOCAL" />
+      <updated>1575041988444</updated>
+    </task>
+    <option name="localTasksCounter" value="10" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -166,7 +171,8 @@
     <MESSAGE value="Interface saboteur créer, il faut la modifier" />
     <MESSAGE value="Interface saboteur créer et fonctionnel" />
     <MESSAGE value="ajout du saboteur pour le groupe clandestin + ajout du message attendu" />
-    <option name="LAST_COMMIT_MESSAGE" value="ajout du saboteur pour le groupe clandestin + ajout du message attendu" />
+    <MESSAGE value="bouton lorsque l'on recoit le message à envoyer avec le groupe clandestins, il faut mettre les actions dessus" />
+    <option name="LAST_COMMIT_MESSAGE" value="bouton lorsque l'on recoit le message à envoyer avec le groupe clandestins, il faut mettre les actions dessus" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LaGuerre$Lanceur.ic" NAME="Lanceur Coverage Results" MODIFIED="1575028782003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

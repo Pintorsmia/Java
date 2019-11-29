@@ -62,18 +62,31 @@ public class Interface_Receiver extends JFrame implements Observer {
             this.diffuseAction = new JButton("Transmettre ordre");
             this.diffuseAction.setEnabled(false);
             this.contenu.add(this.diffuseAction);
+            ajouterEvent(); //methode cree dans la classe regroupe tous les events (c'est juste pour simplifier la lecture)
         }
 
         //Affiche la fenetre
         setVisible(true);
-        //ajouterEvent(); //methode cree dans la classe regroupe tous les events (c'est juste pour simplifier la lecture)
+
         //Met à jour des information (pas très utile dans notre cas, mais on sait jamais)
         //repaint();
 
     }
 
     public void ajouterEvent() {
-
+        this.diffuseAction.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                try {
+                    //fait appel a une fonction du controleur qui lui meme fait appel a une fonction du model
+                    // pour passer au message suivant
+                    controller.diffuseOrdre();  //Fonction dans le controleur
+                } catch (Exception err) {
+                    System.err.println("Erreur" + err.toString());
+                    err.printStackTrace();
+                }
+            }
+        });
     }
 
 

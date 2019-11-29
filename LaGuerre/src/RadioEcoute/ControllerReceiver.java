@@ -23,4 +23,8 @@ public class ControllerReceiver {
         return auditeur;
     }
     public Boolean getAction(){return this.auditeur.getAction();}
+
+    public void diffuseOrdre (){
+        this.auditeur.diffuseOrdre();
+    }
 }
