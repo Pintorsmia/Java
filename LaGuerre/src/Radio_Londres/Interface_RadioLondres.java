@@ -42,8 +42,9 @@ public class Interface_RadioLondres extends JFrame implements Observer {
 
     public void creationFenetre(){
         //Creation de l'interface
-        setTitle("Ma fenetre");
+        setTitle("La Radio");
         setBounds(10,40,300,200);
+        setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Creation des objet dans notre fenetre
         this.nextMessage = new JButton("Message Suivant");
         this.label = new JLabel();

@@ -13,9 +13,17 @@ public abstract class Auditeur extends Observable implements Observer {
     protected ArrayList<String> historiqueMessages;
     protected String messageRecu;
 
+    public Auditeur(Controler_RadioLondres controller) {
+        this.controller = controller;
+        this.controller.getRadioLondres().addObserver(this);
+    }
+
     @Override
     public void update(Observable observable, Object o) {
         messageRecu = controller.getMessageDiffuse();
+        System.out.println("jjjjj");
+        setChanged();
+        notifyObservers();
     }
 
 
