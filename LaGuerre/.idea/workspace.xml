@@ -1,7 +1,28 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="" />
+    <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/RadioEcoute/Interface_Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/RadioEcoute/Auditeur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/RadioEcoute/Auditeur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Lanceur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Lanceur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/RadioLondres.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/RadioLondres.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/RadioEcoute/ControllerRecepter.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/ControllerReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Radio_Londres/Lanceur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Radio_Londres/Lanceur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../TemplateMVC/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../TemplateMVC/.idea/workspace.xml" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -16,8 +37,13 @@
       </list>
     </option>
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
   <component name="ProjectId" id="1TW53lduTe0a27lMVL1gjaaA1LG" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="PropertiesComponent">
+    <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
@@ -72,5 +98,21 @@
       <updated>1573562813028</updated>
     </task>
     <servers />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="com.intellij.coverage.CoverageDataManagerImpl">
+    <SUITE FILE_PATH="coverage/LaGuerre$Lanceur.ic" NAME="Lanceur Coverage Results" MODIFIED="1575028782003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
+      <FILTER>Radio_Londres.*</FILTER>
+    </SUITE>
   </component>
 </project>

@@ -2,14 +2,27 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="fc0fa922-1fbe-45b2-b677-1bc28c3ca99d" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LaGuerre/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/../LaGuerre/src/RadioEcoute/Interface_Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../LaGuerre/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/META-INF/LaGuerre.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/RadioEcoute/Auditeur.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/RadioEcoute/Auditeur.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/Radio_Londres/Lanceur.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/Radio_Londres/RadioLondres.class" beforeDir="false" afterPath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/Radio_Londres/RadioLondres.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/AbstractLayout.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/DimensionInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/GridConstraints.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/GridLayoutManager.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/HorizontalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/LayoutState.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/Spacer.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/SupportCode$TextWithMnemonic.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/SupportCode.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/Util.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/out/production/LaGuerre/com/intellij/uiDesigner/core/VerticalInfo.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/src/RadioEcoute/ControllerRecepter.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LaGuerre/src/RadioEcoute/ControllerReceiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../LaGuerre/src/Radio_Londres/Lanceur.java" beforeDir="false" afterPath="$PROJECT_DIR$/../LaGuerre/src/Radio_Londres/Lanceur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TemplateMVC/META-INF/TemplateMVC.kotlin_module" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TemplateMVC/MVC/Fenetre.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TemplateMVC/MVC/Fenetre.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TemplateMVC/MVC/LaVue$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TemplateMVC/MVC/LaVue$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TemplateMVC/MVC/LaVue.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TemplateMVC/MVC/LaVue.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/TemplateMVC/MVC/Lanceur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/TemplateMVC/MVC/Lanceur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/MVC/LaVue.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/MVC/LaVue.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -33,7 +46,7 @@
   <component name="PropertiesComponent">
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="UI_DESIGNER_EDITOR_MODE.UIDesignerToolWindowManager.WIDTH" value="196" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../LaGuerre" />
     <property name="settings.editor.selected.configurable" value="configurable.group.appearance" />
   </component>
   <component name="RunDashboard">
@@ -79,6 +92,14 @@
       <option name="presentableId" value="Default" />
       <updated>1573811943055</updated>
     </task>
+    <task id="LOCAL-00001" summary="test">
+      <created>1574846737896</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1574846737896</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -86,10 +107,16 @@
       <map>
         <entry key="MAIN">
           <value>
-            <State />
+            <State>
+              <option name="COLUMN_ORDER" />
+            </State>
           </value>
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="test" />
+    <option name="LAST_COMMIT_MESSAGE" value="test" />
   </component>
 </project>

@@ -1,5 +1,9 @@
 package Radio_Londres;
 
+import RadioEcoute.ControllerReceiver;
+import RadioEcoute.Envahisseur;
+import RadioEcoute.Interface_Receiver;
+
 import java.util.ArrayList;
 
 public class Lanceur {
@@ -38,6 +42,19 @@ public class Lanceur {
 
         //Initialisation Vue
         Interface_RadioLondres interface_Radio = new Interface_RadioLondres(controler_radioLondres);
+
+
+
+
+        //partie Auditeur
+        // modele
+        Envahisseur envahisseur1 = new Envahisseur("Envahisseur1", controler_radioLondres);
+
+        //Controller des auditeurs
+        ControllerReceiver controllerReceiver = new ControllerReceiver(envahisseur1);
+
+        //vue des auditeurs
+        Interface_Receiver interfaceEnvahisseur1 = new Interface_Receiver(controllerReceiver);
 
         //Test
         //System.out.println(Resistant1.getPseudo() + " et " + Resistant1.getLesMessages());

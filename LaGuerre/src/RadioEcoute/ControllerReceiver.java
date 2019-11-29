@@ -1,13 +1,17 @@
 package RadioEcoute;
 
-public class ControllerRecepter {
+public class ControllerReceiver {
     private Auditeur auditeur;
 
-    public ControllerRecepter(Auditeur auditeur) {
+    public ControllerReceiver(Auditeur auditeur) {
         this.auditeur = auditeur;
     }
 
     public String getMessageDiffuse(){
        return auditeur.getMessageRecu();
+    }
+
+    public Auditeur getAuditeur() {
+        return auditeur;
     }
 }
