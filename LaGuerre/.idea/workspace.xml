@@ -1,19 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/src/LesSaboteurs/ControllerSaboteurFerroviaire.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/LesSaboteurs/SaboteurFerroviaire.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Auditeur.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/GroupeClandestin.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Lanceur.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Lanceur.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RadioEcoute/Auditeur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/Auditeur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Radio_Londres/Auditeur.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Radio_Londres/GroupeClandestin.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/GroupeClandestin.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Radio_Londres/Lanceur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Radio_Londres/Lanceur.java" afterDir="false" />
-    </list>
+    <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="Interface saboteur créer, il faut la modifier" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -111,7 +99,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575029951238</updated>
     </task>
-    <option name="localTasksCounter" value="4" />
+    <task id="LOCAL-00004" summary="Interface saboteur créer, il faut la modifier">
+      <created>1575032622937</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1575032622937</updated>
+    </task>
+    <option name="localTasksCounter" value="5" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -129,7 +124,8 @@
     <MESSAGE value="Création de l'interface_receiver" />
     <MESSAGE value="Modification pour que l'interface auditeur détecte lorsqu'un message est envoyé" />
     <MESSAGE value="Interface pour l'envahisseur fonctionnel" />
-    <option name="LAST_COMMIT_MESSAGE" value="Interface pour l'envahisseur fonctionnel" />
+    <MESSAGE value="Interface saboteur créer, il faut la modifier" />
+    <option name="LAST_COMMIT_MESSAGE" value="Interface saboteur créer, il faut la modifier" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LaGuerre$Lanceur.ic" NAME="Lanceur Coverage Results" MODIFIED="1575028782003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
