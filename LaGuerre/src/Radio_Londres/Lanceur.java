@@ -1,5 +1,8 @@
 package Radio_Londres;
 
+import LesSaboteurs.ControllerSaboteurFerroviaire;
+import LesSaboteurs.Interface_ActionSaboteur;
+import LesSaboteurs.SaboteurFerroviaire;
 import RadioEcoute.ControllerReceiver;
 import RadioEcoute.Envahisseur;
 import RadioEcoute.GroupeClandestin;
@@ -45,7 +48,13 @@ public class Lanceur {
         Interface_RadioLondres interface_Radio = new Interface_RadioLondres(controler_radioLondres);
 
 
-
+        //Partie Saboteur
+        //modele
+        SaboteurFerroviaire saboteur1 = new SaboteurFerroviaire("Coalition");
+        //controller
+        ControllerSaboteurFerroviaire controllerSaboteurFerroviaire = new ControllerSaboteurFerroviaire(saboteur1);
+        //vue
+        Interface_ActionSaboteur interface_actionSaboteur = new Interface_ActionSaboteur(controllerSaboteurFerroviaire);
 
         //partie Auditeur
         // modele

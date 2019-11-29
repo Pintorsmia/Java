@@ -12,11 +12,11 @@ public class Interface_ActionSaboteur extends JFrame implements Observer {
     private Container contenu;
     private JLabel label;
     private String message;
-    private JComboBox listeResistants;
 
     public Interface_ActionSaboteur(ControllerSaboteurFerroviaire controller) {
         this.controller = controller;
         this.controller.getSaboteur().addObserver(this);
+        this.message = "Ne rien faire";
         this.creationFenetre();
     }
 
@@ -28,7 +28,9 @@ public class Interface_ActionSaboteur extends JFrame implements Observer {
 
     @Override
     public void update(Observable observable, Object o) {
-
+       if (this.controller.getAction()) {
+            this.message = "IL FAUT TOUS CASSER !!!";
+        }
         repaint();
     }
 
@@ -36,7 +38,7 @@ public class Interface_ActionSaboteur extends JFrame implements Observer {
         //Creation de l'interface
         setTitle("Saboteur : " + this.controller.getNom());
         setBounds(10,40,300,200);
-        setLocation(300,500);
+        setLocation(600,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Creation des objet dans notre fenetre
 
