@@ -21,7 +21,6 @@ public abstract class Auditeur extends Observable implements Observer {
     @Override
     public void update(Observable observable, Object o) {
         messageRecu = controller.getMessageDiffuse();
-        System.out.println("jjjjj");
         setChanged();
         notifyObservers();
     }
