@@ -26,6 +26,9 @@ public abstract class Auditeur extends Observable implements Observer {
         notifyObservers();
     }
 
+    public String getPseudo() {
+        return pseudo;
+    }
 
     public String getMessageRecu() {
         return messageRecu;

@@ -11,6 +11,9 @@ public class ControllerReceiver {
        return auditeur.getMessageRecu();
     }
 
+    public String getNom(){
+        return auditeur.getPseudo();
+    }
     public Auditeur getAuditeur() {
         return auditeur;
     }
