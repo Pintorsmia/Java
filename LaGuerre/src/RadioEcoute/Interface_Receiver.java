@@ -16,14 +16,17 @@ import java.util.Observer;
 public class Interface_Receiver extends JFrame implements Observer {
     private ControllerReceiver controller;
     private Container contenu;
+    private JButton startandstop;
     private JButton diffuseAction;
     private JLabel label;
     private JLabel labelInfo;
     private String message;
+    private String statusEcoute;
 
 
     public Interface_Receiver(ControllerReceiver controller) {
         this.controller = controller;
+        this.statusEcoute = "Start";
         ecouterRadio(true);
         this.creationFenetre();
     }
@@ -32,6 +35,7 @@ public class Interface_Receiver extends JFrame implements Observer {
     public void paint(Graphics g) {
         super.paint(g);
         this.label.setText(message);
+        this.startandstop.setText(this.statusEcoute);
     }
 
     @Override
@@ -53,6 +57,7 @@ public class Interface_Receiver extends JFrame implements Observer {
         this.label = new JLabel();
         this.label.setVisible(true);
         this.labelInfo = new JLabel("Message Recu :");
+        this.startandstop = new JButton(this.statusEcoute);
 
 
         this.contenu = getContentPane();
@@ -65,9 +70,10 @@ public class Interface_Receiver extends JFrame implements Observer {
             this.diffuseAction = new JButton("Transmettre ordre");
             this.diffuseAction.setEnabled(false);
             this.contenu.add(this.diffuseAction);
-            ajouterEvent(); //methode cree dans la classe regroupe tous les events (c'est juste pour simplifier la lecture)
+            ajouterEventClandestin(); //methode cree dans la classe regroupe tous les events (c'est juste pour simplifier la lecture)
         }
-
+        this.contenu.add(this.startandstop);
+        ajouterEvent();
         //Affiche la fenetre
         setVisible(true);
 
@@ -77,6 +83,26 @@ public class Interface_Receiver extends JFrame implements Observer {
     }
 
     public void ajouterEvent() {
+        this.startandstop.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                try {
+                    switch (statusEcoute){
+                        case "Start":
+                            ecouterRadio(true);
+                            break;
+                        case "Stop":
+                            ecouterRadio(false);
+                            break;
+                    }
+                } catch (Exception err) {
+                    System.err.println("Erreur" + err.toString());
+                    err.printStackTrace();
+                }
+            }
+        });
+    }
+    public void ajouterEventClandestin() {
         this.diffuseAction.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
@@ -97,9 +123,12 @@ public class Interface_Receiver extends JFrame implements Observer {
     public void ecouterRadio(Boolean status){
         if (status){
             this.controller.getAuditeur().addObserver(this);
+            this.statusEcoute = "Stop";
         }else {
             this.controller.getAuditeur().deleteObserver(this);
+            this.statusEcoute = "Start";
         }
+        repaint();
     }
 
 
