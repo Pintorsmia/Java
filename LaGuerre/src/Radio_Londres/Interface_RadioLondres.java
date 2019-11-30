@@ -12,8 +12,10 @@ import java.util.Observer;
 
 public class Interface_RadioLondres extends JFrame implements Observer {
     private Controler_RadioLondres controller;
+    private Boolean statusStart;
     private Container contenu;
     private ArrayList<String> resistant;
+    private JButton start;
     private JButton nextMessage;
     private JLabel label;
     private String message;
@@ -23,17 +25,24 @@ public class Interface_RadioLondres extends JFrame implements Observer {
         this.controller = controller;
         this.controller.getRadioLondres().addObserver(this);
         this.resistant = controller.getRadioLondres().getResistants();
+        this.statusStart = false;
         creationFenetre();
     }
 
     @Override
     public void paint(Graphics g) {
         super.paint(g);
+        if (this.statusStart){
+            this.nextMessage.setEnabled(true);
+        }else{
+            this.nextMessage.setEnabled(false);
+        }
         this.label.setText(message);
     }
 
     @Override
     public void update(Observable observable, Object o) {
+
         message = controller.getMessageDiffuse();
         repaint();
     }
@@ -46,7 +55,9 @@ public class Interface_RadioLondres extends JFrame implements Observer {
         setBounds(10,40,300,200);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Creation des objet dans notre fenetre
+        this.start = new JButton("Start");
         this.nextMessage = new JButton("Message Suivant");
+        this.nextMessage.setEnabled(false);
         this.label = new JLabel();
         this.label.setVisible(true);
         this.listeResistants = new JComboBox();
@@ -55,6 +66,7 @@ public class Interface_RadioLondres extends JFrame implements Observer {
         this.contenu.setLayout(new FlowLayout());
         //ajouts des elements
         this.contenu.add(this.listeResistants);
+        this.contenu.add(this.start);
         this.contenu.add(this.nextMessage);
         this.contenu.add(this.label);
 
@@ -91,5 +103,19 @@ public class Interface_RadioLondres extends JFrame implements Observer {
                 }
             }
         });
+        this.start.addActionListener(new ActionListener() {
+            @Override
+            public void actionPerformed(ActionEvent actionEvent) {
+                try {
+                    statusStart = controller.startRadio();
+                    repaint();
+                } catch (Exception err) {
+                    System.err.println("Erreur" + err.toString());
+                    err.printStackTrace();
+                }
+            }
+        });
+
+
     }
 }

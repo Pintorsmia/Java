@@ -44,6 +44,11 @@ public class RadioLondres extends Observable {
         itMessage = listeMessages.iterator();
     }
 
+    //Verifie qu'il y ait au moins un message dans la liste et demarre la radio
+    public boolean startRadio(){
+        return !this.listeMessages.isEmpty();
+    }
+
     public void diffuseMessage() {
         messageSuivant();
         setChanged();

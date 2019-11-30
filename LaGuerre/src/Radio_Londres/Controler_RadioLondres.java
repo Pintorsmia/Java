@@ -28,4 +28,8 @@ public class Controler_RadioLondres {
     public RadioLondres getRadioLondres() {
         return radioLondres;
     }
+
+    public boolean startRadio(){
+        return this.radioLondres.startRadio();
+    }
 }
