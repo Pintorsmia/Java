@@ -18,6 +18,7 @@ public class Interface_Receiver extends JFrame implements Observer {
     private Container contenu;
     private JButton diffuseAction;
     private JLabel label;
+    private JLabel labelInfo;
     private String message;
 
 
@@ -51,11 +52,13 @@ public class Interface_Receiver extends JFrame implements Observer {
         //Creation des objet dans notre fenetre
         this.label = new JLabel();
         this.label.setVisible(true);
+        this.labelInfo = new JLabel("Message Recu :");
 
 
         this.contenu = getContentPane();
         this.contenu.setLayout(new FlowLayout());
         //ajouts des elements
+        this.contenu.add(this.labelInfo);
         this.contenu.add(this.label);
         //Pour le bouton on vérifie juste que ce soit un Groupe clandestin et pas une personne "lambda"
         if(this.controller.getAuditeur() instanceof GroupeClandestin){
@@ -81,12 +84,18 @@ public class Interface_Receiver extends JFrame implements Observer {
                     //fait appel a une fonction du controleur qui lui meme fait appel a une fonction du model
                     // pour passer au message suivant
                     controller.diffuseOrdre();  //Fonction dans le controleur
+                    //On arrete d'ecouter
+                    stopEcoute();
                 } catch (Exception err) {
                     System.err.println("Erreur" + err.toString());
                     err.printStackTrace();
                 }
             }
         });
+    }
+
+    public void stopEcoute(){
+        this.controller.getAuditeur().deleteObserver(this);
     }
 
 
