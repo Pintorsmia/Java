@@ -166,7 +166,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575148582898</updated>
     </task>
-    <option name="localTasksCounter" value="13" />
+    <task id="LOCAL-00013" summary="Lorsque un clandestin donne l'ordre d'attaque, il arrete d'ecouter la radio">
+      <created>1575148999027</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1575148999027</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -193,7 +200,8 @@
     <MESSAGE value="Bonton d'envoie de l'ordre au saboteur. Fonctionnalité basique terminé. CODE OK" />
     <MESSAGE value="Bouton start vérifiant si la liste des messages est remplit ou non" />
     <MESSAGE value="Bouton start vérifiant si la liste des messages est remplit ou non + quand tous les meesages sont passé, regrise le bouton." />
-    <option name="LAST_COMMIT_MESSAGE" value="Bouton start vérifiant si la liste des messages est remplit ou non + quand tous les meesages sont passé, regrise le bouton." />
+    <MESSAGE value="Lorsque un clandestin donne l'ordre d'attaque, il arrete d'ecouter la radio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Lorsque un clandestin donne l'ordre d'attaque, il arrete d'ecouter la radio" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LaGuerre$Lanceur.ic" NAME="Lanceur Coverage Results" MODIFIED="1575028782003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

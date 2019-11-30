@@ -24,7 +24,7 @@ public class Interface_Receiver extends JFrame implements Observer {
 
     public Interface_Receiver(ControllerReceiver controller) {
         this.controller = controller;
-        this.controller.getAuditeur().addObserver(this);
+        ecouterRadio(true);
         this.creationFenetre();
     }
 
@@ -85,7 +85,7 @@ public class Interface_Receiver extends JFrame implements Observer {
                     // pour passer au message suivant
                     controller.diffuseOrdre();  //Fonction dans le controleur
                     //On arrete d'ecouter
-                    stopEcoute();
+                    ecouterRadio(false);
                 } catch (Exception err) {
                     System.err.println("Erreur" + err.toString());
                     err.printStackTrace();
@@ -94,8 +94,12 @@ public class Interface_Receiver extends JFrame implements Observer {
         });
     }
 
-    public void stopEcoute(){
-        this.controller.getAuditeur().deleteObserver(this);
+    public void ecouterRadio(Boolean status){
+        if (status){
+            this.controller.getAuditeur().addObserver(this);
+        }else {
+            this.controller.getAuditeur().deleteObserver(this);
+        }
     }
 
 
