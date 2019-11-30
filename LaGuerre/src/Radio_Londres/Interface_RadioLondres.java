@@ -37,7 +37,13 @@ public class Interface_RadioLondres extends JFrame implements Observer {
         }else{
             this.nextMessage.setEnabled(false);
         }
+        if (this.controller.getHasNext()){
+            this.nextMessage.setEnabled(true);
+        }else{
+            this.nextMessage.setEnabled(false);
+        }
         this.label.setText(message);
+
     }
 
     @Override
@@ -107,7 +113,7 @@ public class Interface_RadioLondres extends JFrame implements Observer {
             @Override
             public void actionPerformed(ActionEvent actionEvent) {
                 try {
-                    statusStart = controller.startRadio();
+                    controller.startRadio();
                     repaint();
                 } catch (Exception err) {
                     System.err.println("Erreur" + err.toString());

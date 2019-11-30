@@ -29,7 +29,11 @@ public class Controler_RadioLondres {
         return radioLondres;
     }
 
-    public boolean startRadio(){
-        return this.radioLondres.startRadio();
+    public void startRadio(){
+        this.radioLondres.startRadio();
     }
+    public boolean getHasNext(){
+        return this.radioLondres.getHasNext();
+    }
+
 }

@@ -11,12 +11,14 @@ public class RadioLondres extends Observable {
     private Iterator itResistant;
     private String leMessageDiffuse;
     private String nomRadio;
+    private Boolean hasNext;
 
     public RadioLondres(String nom) {
         this.nomRadio = nom;
         this.lesResistants = new ArrayList<Resistant>();
         this.listeMessages = new ArrayList<String>();
         this.itMessage = listeMessages.iterator();
+        this.hasNext = false;
     }
 
     public void addResistant(Resistant resistantPersonne) {
@@ -26,9 +28,11 @@ public class RadioLondres extends Observable {
 
     public void messageSuivant(){
         if(itMessage.hasNext()) {
+            this.hasNext = true;
             this.leMessageDiffuse = (String) this.itMessage.next();
         }else{
             this.leMessageDiffuse = "Fin";
+            this.hasNext = false;
         }
     }
     public void addResistantDiffuseurs(String nomResistant){
@@ -45,8 +49,12 @@ public class RadioLondres extends Observable {
     }
 
     //Verifie qu'il y ait au moins un message dans la liste et demarre la radio
-    public boolean startRadio(){
-        return !this.listeMessages.isEmpty();
+    public void startRadio(){
+        if (this.listeMessages.isEmpty()) {
+            this.hasNext = false;
+        }else {
+            this.hasNext = true;
+        }
     }
 
     public void diffuseMessage() {
@@ -67,6 +75,10 @@ public class RadioLondres extends Observable {
 
     public String getMessageDiffuse() {
         return leMessageDiffuse;
+    }
+
+    public Boolean getHasNext() {
+        return hasNext;
     }
 }
 
