@@ -10,6 +10,7 @@ import java.util.Observer;
 public class Interface_ActionSaboteur extends JFrame implements Observer {
     private ControllerSaboteurFerroviaire controller;
     private Container contenu;
+    private JLabel labelInfo;
     private JLabel label;
     private String message;
 
@@ -36,18 +37,19 @@ public class Interface_ActionSaboteur extends JFrame implements Observer {
 
     public void creationFenetre(){
         //Creation de l'interface
-        setTitle("Saboteur : " + this.controller.getNom());
+        setTitle("Interface Saboteur : " + this.controller.getNom());
         setBounds(10,40,300,200);
         setLocation(600,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
         //Creation des objet dans notre fenetre
-
+        this.labelInfo = new JLabel("Action :");
         this.label = new JLabel();
         this.label.setVisible(true);
 
         this.contenu = getContentPane();
         this.contenu.setLayout(new FlowLayout());
         //ajouts des elements
+        this.contenu.add(this.labelInfo);
         this.contenu.add(this.label);
 
         //Affiche la fenetre

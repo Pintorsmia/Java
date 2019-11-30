@@ -3,6 +3,7 @@
   <component name="ChangeListManager">
     <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/RadioEcoute/Interface_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/Interface_Receiver.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -180,7 +181,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575149175372</updated>
     </task>
-    <option name="localTasksCounter" value="15" />
+    <task id="LOCAL-00015" summary="Bouton start/stop des auditeurs, fontionnel. Il permet d'ajouter ou de supprmer l'observation de la classe Radio">
+      <created>1575150134154</created>
+      <option name="number" value="00015" />
+      <option name="presentableId" value="LOCAL-00015" />
+      <option name="project" value="LOCAL" />
+      <updated>1575150134154</updated>
+    </task>
+    <option name="localTasksCounter" value="16" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -208,7 +216,8 @@
     <MESSAGE value="Bouton start vérifiant si la liste des messages est remplit ou non" />
     <MESSAGE value="Bouton start vérifiant si la liste des messages est remplit ou non + quand tous les meesages sont passé, regrise le bouton." />
     <MESSAGE value="Lorsque un clandestin donne l'ordre d'attaque, il arrete d'ecouter la radio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Lorsque un clandestin donne l'ordre d'attaque, il arrete d'ecouter la radio" />
+    <MESSAGE value="Bouton start/stop des auditeurs, fontionnel. Il permet d'ajouter ou de supprmer l'observation de la classe Radio" />
+    <option name="LAST_COMMIT_MESSAGE" value="Bouton start/stop des auditeurs, fontionnel. Il permet d'ajouter ou de supprmer l'observation de la classe Radio" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LaGuerre$Lanceur.ic" NAME="Lanceur Coverage Results" MODIFIED="1575028782003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">

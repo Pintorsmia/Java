@@ -49,7 +49,7 @@ public class Interface_Receiver extends JFrame implements Observer {
 
     public void creationFenetre(){
         //Creation de l'interface
-        setTitle("Auditeur : " + this.controller.getNom());
+        setTitle("Interface Récepteur : " + this.controller.getNom());
         setBounds(10,40,300,200);
         setLocation(300,500);
         setDefaultCloseOperation(EXIT_ON_CLOSE);
