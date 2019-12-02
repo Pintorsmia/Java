@@ -106,6 +106,9 @@ public class Interface_RadioLondres extends JFrame implements Observer {
                     String item = (String) itemEvent.getItem();
                     controller.addResistantControler(item);
                     System.out.println(item);
+                    resistant.remove(item);
+                    listeResistants.setModel(new DefaultComboBoxModel(resistant.toArray()));
+                    repaint();
                 }
             }
         });

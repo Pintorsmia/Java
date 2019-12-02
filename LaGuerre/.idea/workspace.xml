@@ -3,8 +3,9 @@
   <component name="ChangeListManager">
     <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/RadioEcoute/Interface_Receiver.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/RadioEcoute/Interface_Receiver.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Interface_RadioLondres$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Interface_RadioLondres$2.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Interface_RadioLondres.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Interface_RadioLondres.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Radio_Londres/Interface_RadioLondres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Radio_Londres/Interface_RadioLondres.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -188,7 +189,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575150134154</updated>
     </task>
-    <option name="localTasksCounter" value="16" />
+    <task id="LOCAL-00016" summary="Modification du nom + ajout d'un label pour le saboteur">
+      <created>1575150383638</created>
+      <option name="number" value="00016" />
+      <option name="presentableId" value="LOCAL-00016" />
+      <option name="project" value="LOCAL" />
+      <updated>1575150383638</updated>
+    </task>
+    <option name="localTasksCounter" value="17" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -217,7 +225,8 @@
     <MESSAGE value="Bouton start vérifiant si la liste des messages est remplit ou non + quand tous les meesages sont passé, regrise le bouton." />
     <MESSAGE value="Lorsque un clandestin donne l'ordre d'attaque, il arrete d'ecouter la radio" />
     <MESSAGE value="Bouton start/stop des auditeurs, fontionnel. Il permet d'ajouter ou de supprmer l'observation de la classe Radio" />
-    <option name="LAST_COMMIT_MESSAGE" value="Bouton start/stop des auditeurs, fontionnel. Il permet d'ajouter ou de supprmer l'observation de la classe Radio" />
+    <MESSAGE value="Modification du nom + ajout d'un label pour le saboteur" />
+    <option name="LAST_COMMIT_MESSAGE" value="Modification du nom + ajout d'un label pour le saboteur" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/LaGuerre$Lanceur.ic" NAME="Lanceur Coverage Results" MODIFIED="1575028782003" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="idea" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false">
