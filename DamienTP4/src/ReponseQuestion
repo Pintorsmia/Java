@@ -1,0 +1,19 @@
+Partie 1
+
+8- Il se trouve dans le dossier Config, Non il n'est pas modifié par mes 
+   actions car il ne sert que pour l'initialisation
+
+14- Oui la mom se comporte de la même façon.
+
+
+Partie 2
+
+2- "Chemin"\mosquito_sub.exe -h @ip-pub -t topic
+
+3- "Chemin"\mosquito_pub.exe -h localhost -t topic -m message -r (persistance 
+   des messages) -q (QOS)
+
+4- Par défaut les messages ne sont pas persistants. Il faut utiliser -r
+
+5- Il faut modifier -h et mettre l'adre
+
