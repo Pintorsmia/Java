@@ -30,7 +30,7 @@ public class Interface_ActionSaboteur extends JFrame implements Observer {
     @Override
     public void update(Observable observable, Object o) {
        if (this.controller.getAction()) {
-            this.message = "IL FAUT TOUS CASSER !!!";
+            this.message = "C'est l'heure du DUDUDUDUDU DUEL !!!";
         }
         repaint();
     }

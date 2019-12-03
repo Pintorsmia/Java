@@ -23,7 +23,7 @@ public class Lanceur {
 
         ArrayList<String> ArrayMessages2 = new ArrayList<String>();
         ArrayMessages2.add("1111");
-        ArrayMessages2.add("2121");
+        ArrayMessages2.add("Les sanglots long des violons ...");
         ArrayMessages2.add("2222");
         Resistant Resistant2 = new Resistant("Resistant2",ArrayMessages2,Allie1);
 
@@ -60,7 +60,7 @@ public class Lanceur {
         // modele
         Envahisseur envahisseur1 = new Envahisseur("Envahisseur1", controler_radioLondres);
 
-        GroupeClandestin groupe1 = new GroupeClandestin("GroupeClandestin1","2121", saboteur1, controler_radioLondres);
+        GroupeClandestin groupe1 = new GroupeClandestin("GroupeClandestin1","Les sanglots long des violons ...", saboteur1, controler_radioLondres);
 
         //Controller des auditeurs
         ControllerReceiver controllerReceiver1 = new ControllerReceiver(envahisseur1);

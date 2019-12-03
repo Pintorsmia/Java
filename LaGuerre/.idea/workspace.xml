@@ -3,9 +3,8 @@
   <component name="ChangeListManager">
     <list default="true" id="583536d0-4d44-489b-8f1a-c64b22b4a9e9" name="Default Changelist" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Interface_RadioLondres$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Interface_RadioLondres$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Interface_RadioLondres.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/LaGuerre/Radio_Londres/Interface_RadioLondres.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Radio_Londres/Interface_RadioLondres.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Radio_Londres/Interface_RadioLondres.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/LesSaboteurs/Interface_ActionSaboteur.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Radio_Londres/Lanceur.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Radio_Londres/Lanceur.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -19,6 +18,8 @@
         <option value="ClassMain" />
         <option value="Class" />
         <option value="Interface" />
+        <option value="UML Sequence" />
+        <option value="UML Class" />
       </list>
     </option>
   </component>
@@ -30,8 +31,9 @@
     <ConfirmationsSetting value="2" id="Add" />
   </component>
   <component name="PropertiesComponent">
+    <property name="DefaultPlantUmlFileTemplate" value="UML Class" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$/../TP4_MQTT" />
     <property name="restartRequiresConfirmation" value="false" />
     <property name="run.code.analysis.last.selected.profile" value="pProject Default" />
     <property name="settings.editor.selected.configurable" value="preferences.pluginManager" />
@@ -196,7 +198,14 @@
       <option name="project" value="LOCAL" />
       <updated>1575150383638</updated>
     </task>
-    <option name="localTasksCounter" value="17" />
+    <task id="LOCAL-00017" summary="Modification du nom + ajout d'un label pour le saboteur">
+      <created>1575280921609</created>
+      <option name="number" value="00017" />
+      <option name="presentableId" value="LOCAL-00017" />
+      <option name="project" value="LOCAL" />
+      <updated>1575280921609</updated>
+    </task>
+    <option name="localTasksCounter" value="18" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
