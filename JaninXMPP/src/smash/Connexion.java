@@ -25,6 +25,17 @@ import org.jivesoftware.smackx.filetransfer.FileTransferRequest;
 import org.jivesoftware.smackx.filetransfer.IncomingFileTransfer;
 import org.jivesoftware.smackx.filetransfer.OutgoingFileTransfer;
 
+
+
+/*
+ * Argument -> JID : example : falcon@is2403a.local.univ-savoie.fr
+ * Commande utilisable :
+ * 			/add JID -> ajoute dans le roster du user
+ * 			/send "chemin du fichier"
+ * 			/quit
+ */
+
+
 public class Connexion {
 	public static void main(String[] args) throws XMPPException {
 		Connexion connexion = new Connexion();
@@ -71,7 +82,7 @@ public class Connexion {
 			roster.createEntry("pikachu@is2403a.local.univ-savoie.fr", null, null);
 			roster = connexion.Roster(connection);
 		}else if(str.compareTo("/send") == 0){
-			connexion.sendFile(connection, "falcon@is2403a.local.univ-savoie.fr/SomeRessource", sc.next());
+			connexion.sendFile(connection, args[0] + "/SomeRessource", sc.next());
 		}else {
 		
 			try {
