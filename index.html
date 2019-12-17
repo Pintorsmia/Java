@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <title>Coucou</title>
+  </head>
+  <body>
+        <div id='nb'>0</div>
+        <button id="increment"> Incrémenter </button>
+        <button id="decrement"> Décrémenter </button>
+        <button id="raz"> Remise à zéro </button>
+
+        
+       
+        
+        <p>Solea1_Drive
+
+
+        <div id=text contenteditable="true" >Tape ici mamen</div>
+        <script src="/socket.io/socket.io.js"></script>
+        <script>
+          var socket = io();
+        
+          document.getElementById('increment').onclick = function(){
+            socket.emit('increment', document.getElementById('nb').innerText);
+          };
+        
+          document.getElementById('decrement').onclick = function(){
+            socket.emit('decrement', document.getElementById('nb').innerText);
+          };
+        
+          document.getElementById('raz').onclick = function(){
+            socket.emit('raz', document.getElementById('nb').innerText);
+          };
+        
+          socket.on('compteur', function(msg){
+            document.getElementById('nb').innerText = msg;
+          });
+
+         //Chat
+         
+
+        document.getElementById("text").addEventListener("input", function() {
+            socket.emit('receive', document.getElementById('text').textContent);
+        }, false);
+
+        socket.on('server', function(msg){
+            document.getElementById('text').textContent = msg;
+            console.log(msg);
+          });
+
+
+
+
+        </script>
+
+  </body>
+</html>
